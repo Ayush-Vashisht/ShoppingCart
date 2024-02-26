@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-const Products = ({ state, dispatch }) => {
+
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
+const Products = () => {
+  const { state, dispatch } = useContext(CartContext);
   const { products, cart } = state;
 
   return (
