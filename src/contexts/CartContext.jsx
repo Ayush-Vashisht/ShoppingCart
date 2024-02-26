@@ -14,7 +14,6 @@ export function CartContextProvider({ children }) {
 
   const getProducts = async () => {
     const { data } = await axios.get("https://dummyjson.com/products");
-    console.log(data.products);
     dispatch({
       type: "ADD_PRODUCTS",
       payload: data.products,

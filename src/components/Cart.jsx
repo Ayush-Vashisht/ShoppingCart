@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../contexts/CartContext";
 
 const Cart = () => {
   const { state, dispatch } = useContext(CartContext);
